@@ -7,6 +7,7 @@ double function(double x) {
 }
 
 int main() {
+	printf("bisection method:\n\n");
     double x0, x1, x2, f0, f1, f2, tolerance;
     int step = 1;
 

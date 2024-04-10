@@ -10,7 +10,7 @@ Lab Assignment #1
 
 Lab Assignment #2
 1.	WAP to implement Lagrange’s interpolation.
-2.	Write a program to implement Newton’s divided difference interpolation.
+2.	Write a program to implement divided difference interpolation.
 3.	WAP to implement Newton’s forward difference formula.
 4.	WAP to implement Newton’s backward difference formula.
 5.	WAP to implement least square approximation.
