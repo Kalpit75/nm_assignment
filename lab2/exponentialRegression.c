@@ -13,7 +13,8 @@ int main(){
    	
    	float x[n],y[n];
 	   	  	
-   	for(i=0; i<n; i++){
+   	for(i=0; i<n; i++)
+	   {
    		printf("Enter x[%d] = ",i);
 		scanf("%f",&x[i]);
 		printf("Enter y=f[%.2f] = ",x[i]);

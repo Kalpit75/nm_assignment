@@ -1,5 +1,5 @@
 #include <stdio.h>
-
+#include<conio.h>
 // Function to calculate factorial
 int factorial(int n) {
     int fact = 1;
@@ -53,5 +53,6 @@ int main() {
     double result = newtonForwardDifference(x, y, n, xi);
     printf("Interpolated value at xi = %.2lf is %.6lf\n", xi, result);
 
+	getch();
     return 0;
 }

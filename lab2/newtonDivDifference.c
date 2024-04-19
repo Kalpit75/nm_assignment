@@ -1,7 +1,9 @@
 #include <stdio.h>
+#include<conio.h>
 void DivDif(double x[], double y[], double dd[][10], int n) {
     int i, j;
-    for(i = 0; i < n; i++) {
+    for(i = 0; i < n; i++)
+	 {
         dd[i][0] = y[i];
     }
     for(j = 1; j < n; j++) {
@@ -50,5 +52,6 @@ int main() {
     
     printf("Interpolated value at xi = %.2lf is %.6lf\n", xi, result);
 
+	getch();
     return 0;
 }

@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include<conio.h>
 
 // Function to perform Newton's backward difference interpolation
 double newtonBackwardDifference(double x[], double y[], int n, double xi) {
@@ -6,7 +7,10 @@ double newtonBackwardDifference(double x[], double y[], int n, double xi) {
 
     // Calculate divided differences
     double dd[n][n];
-    for (int i = 0; i < n; ++i) dd[i][0] = y[i];
+    for ( int i = 0; i < n; ++i)
+	{
+		dd[i][0] = y[i];
+	} 
     for (int j = 1; j < n; ++j)
         for (int i = n - 1; i >= j; --i)
             dd[i][j] = dd[i][j - 1] - dd[i - 1][j - 1];
@@ -37,6 +41,6 @@ int main() {
 
     double result = newtonBackwardDifference(x, y, n, xi);
     printf("Interpolated value at xi = %.2lf is %.6lf\n", xi, result);
-
+	getch();
     return 0;
 }
